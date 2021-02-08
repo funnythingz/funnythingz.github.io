@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          &copy; <a href="https://www.funnythingz.com" target="_blank">funnythingz</a>
+          &copy; <a href="https://www.funnythingz.com" target="_blank" rel="noreferrer">funnythingz</a>
         </footer>
       </div>
     </>
