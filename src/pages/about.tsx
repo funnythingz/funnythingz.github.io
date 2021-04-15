@@ -18,7 +18,6 @@ const About: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       デザインやコンテンツは旧サイト当時のものをそのまま流用し、Web標準に基づいたXHTML+CSSによってゼロからソースコードをかきなおしました。
     </p>
     <p>
-
       そして、2009年1月、"makingmachinez.com" と語尾に "z" をつけて完全復活しました。
       <br />
       2010年9月、MovableTypeのバージョンを5にアップグレードし、テンプレートも一新しました。(デザイン変更なし)
