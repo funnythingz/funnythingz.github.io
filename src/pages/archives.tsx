@@ -48,7 +48,7 @@ export const query = graphql`
             frontmatter {
               title
               slug
-              date(formatString: "YYYY年M月-D日")
+              date(formatString: "YYYY年M月D日")
               cover {
                 childImageSharp {
                   fixed(width: 320, height: 240) {
