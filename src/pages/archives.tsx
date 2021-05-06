@@ -14,9 +14,11 @@ const Archives: React.FC<PageProps<DataProps>> = ({ data, path }) => (
     <p>ライブディオ/ライブディオZX/スーパーディオを改造カスタムする日々の記録</p>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <article key={node.frontmatter.slug}>
-        <Image
-          fixed={node.frontmatter.cover.childImageSharp.fixed}
-        />
+        {node.frontmatter.cover &&
+          <Image
+            fixed={node.frontmatter.cover.childImageSharp.fixed}
+          />
+        }
         <h2>
           <Link to={node.frontmatter.slug}>
             {node.frontmatter.title}

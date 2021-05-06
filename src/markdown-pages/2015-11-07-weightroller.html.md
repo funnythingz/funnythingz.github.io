@@ -1,6 +1,6 @@
 ---
 title: ウェイトローラーが粉々だったから交換した
-date: 2015-11-07 12:48 JST
+date: 2015-11-07
 tags: ['ライブディオ - ひろライブディオ']
 slug: /2015/11/livedio-weightroller
 cover: ./photo/diary/20151107_1.jpg

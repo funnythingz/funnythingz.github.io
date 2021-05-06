@@ -1,6 +1,6 @@
 ---
 title: キックペダルが折れたので交換した
-date: 2016-10-01 21:05 JST
+date: 2016-10-01
 tags: ['ライブディオ - ひろライブディオ']
 slug: /2016/10/kickpedal
 cover: ./photo/diary/20161001_1.jpg

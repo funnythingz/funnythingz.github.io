@@ -1,6 +1,6 @@
 ---
 title: ライブディオを廃車にしました
-date: 2017-03-07 00:00 JST
+date: 2017-03-07
 tags: ['ライブディオ - ひろライブディオ']
 slug: /2017/03/goodbye-livedio
 cover: ./photo/diary/2017.03.07_01.jpg
