@@ -33,12 +33,30 @@ const Menu = () => (
         </Link>
       </li>
       <li>
+        <Link to="/touring"
+          className={location.pathname.match(/\/touring/) ?
+            `--active` : ''
+          }
+        >
+          ツーリングレポート
+        </Link>
+      </li>
+      <li>
         <Link to="/mini4wd"
           className={location.pathname.match(/\/mini4wd/) ?
             `--active` : ''
           }
         >
           ミニ四駆
+        </Link>
+      </li>
+      <li>
+        <Link to="/superthomas"
+          className={location.pathname.match(/\/superthomas/) ?
+            `--active` : ''
+          }
+        >
+          プラレール・スーパートーマス
         </Link>
       </li>
       <li>

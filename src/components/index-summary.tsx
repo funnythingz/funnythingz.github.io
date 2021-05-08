@@ -60,7 +60,7 @@ const IndexSummary = ({ data }) =>(
 )
 
 IndexSummary.propTypes = {
-  data: PropTypes.node,
+  data: PropTypes.object,
 }
 
 IndexSummary.defaultProps = {

@@ -9,7 +9,7 @@ import IndexSummary from "../components/index-summary"
 const Mini4wd: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <Layout>
     <SEO title="ミニ四駆" />
-    <h1>ミニ四駆</h1>
+    <h1 className="pageTitle">ミニ四駆</h1>
     <img src={Visual} />
     <p>とあるミニ四駆初心者のミニ四駆沼の記録日記</p>
     <IndexSummary data={data} />

@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const About: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <Layout>
     <SEO title="About" />
-    <h1>Hello! Making Machinez</h1>
+    <h1 className="pageTitle">Hello! Making Machinez</h1>
     <p>
       このサイトは、2004年～2006年まで "makingmachine.com" で公開されていた原付改造日記を再構築したものです。
       <br />

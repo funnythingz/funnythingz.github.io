@@ -10,7 +10,7 @@ import IndexSummary from "../components/index-summary"
 const IndexPage: React.FC<PageProps<DataProps>> = ({ data }) => (
   <Layout>
     <SEO title="原付改造" />
-    <h1>Hi gentsuki kids!</h1>
+    <h1 className="pageTitle">Hi gentsuki kids!</h1>
     <p>
       Welcome to Making Machinez.
       This site is so funny diary site.
