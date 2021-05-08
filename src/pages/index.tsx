@@ -20,9 +20,7 @@ const IndexPage: React.FC<PageProps<DataProps>> = ({ data }) => (
       marginBottom: `1.45rem`,
       textAlign: `center`,
     }}>
-      <Link to="/archives">
-        <img src={ RandomVisual() } alt="" width="90%" />
-      </Link>
+      <img src={ RandomVisual() } alt="" width="90%" />
     </div>
     <IndexSummary data={data} />
   </Layout>

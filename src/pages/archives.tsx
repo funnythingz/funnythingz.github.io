@@ -20,7 +20,18 @@ export default Archives
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+    allMarkdownRemark(
+      sort: {fields: [frontmatter___date], order: DESC}
+      filter: {frontmatter: {tags: {in: [
+        "ライブディオZX - ひろZX",
+        "スーパーディオ - ひろディオ",
+        "ライブディオ - ひろライブディオ",
+        "みんなの原付",
+        "JOG - とだJOG",
+        "ライブディオZX - 規制前ひろZX",
+        "JOG-ZR - IPE-ZR",
+      ]}}}
+    ) {
       group(field: frontmatter___tags) {
         tag: fieldValue
         edges {
