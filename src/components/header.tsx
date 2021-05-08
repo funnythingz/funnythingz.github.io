@@ -2,31 +2,29 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import Logo from './header/logo'
+import Menu from './header/menu'
+
+const styles = {
+  header: {
+    background: `#f90`,
+    marginBottom: `1.5rem`,
+  },
+  container: {
+    margin: `0 auto`,
+    maxWidth: 960,
+    padding: `0.5rem`,
+  },
+}
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `#f90`,
-      marginBottom: `1.45rem`,
-    }}
+    style={styles.header}
   >
     <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
+      style={styles.container}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `#fff`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <Logo title={siteTitle} />
+      <Menu />
     </div>
   </header>
 )
