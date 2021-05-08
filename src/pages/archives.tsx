@@ -12,7 +12,7 @@ const Archives: React.FC<PageProps<DataProps>> = ({ data, path }) => (
     <h1>原付改造ブログ</h1>
     <img src={Visual} />
     <p>ライブディオ/ライブディオZX/スーパーディオを改造カスタムする日々の記録</p>
-    {data.allMarkdownRemark.group.map(({ tag, edges }) => (
+    {data.allMarkdownRemark.group.sort((a, b) => b.totalCount - a.totalCount).map(({ tag, edges }) => (
       <article key={tag}>
         <h1 style={{
           fontSize: `1.3rem`,
@@ -70,7 +70,7 @@ export default Archives
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
       group(field: frontmatter___tags) {
         tag: fieldValue
         edges {
@@ -88,7 +88,8 @@ export const query = graphql`
               }
             }
           }
-        }
+        },
+        totalCount
       }
     }
   }
