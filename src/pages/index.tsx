@@ -22,7 +22,6 @@ const IndexPage = () => (
     <ul>
       <li><Link to="/archives">原付改造ブログ</Link></li>
       <li><Link to="/about">About</Link></li>
-      <li><Link to="/using-typescript">Go to "Using TypeScript"</Link></li>
     </ul>
   </Layout>
 )
