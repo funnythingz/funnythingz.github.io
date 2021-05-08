@@ -6,6 +6,15 @@ const Menu = () => (
   <>
     <ul className="globalMenu">
       <li>
+        <Link to="/"
+          className={location.pathname === '/' ?
+            `--active` : ''
+          }
+        >
+          HOME
+        </Link>
+      </li>
+      <li>
         <Link to="/archives"
           className={location.pathname.match(/\/archives/) ?
             `--active` : ''
