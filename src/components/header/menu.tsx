@@ -4,7 +4,6 @@ import React from "react"
 
 const Menu = () => (
   <>
-    {console.log(location.pathname)}
     <ul className="globalMenu">
       <li>
         <Link to="/archives"
