@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,7 +19,9 @@ const IndexPage = () => (
       marginBottom: `1.45rem`,
       textAlign: `center`,
     }}>
-      <img src={ RandomVisual() } alt="" width="90%" />
+      <Link to="/archives">
+        <img src={ RandomVisual() } alt="" width="90%" />
+      </Link>
     </div>
   </Layout>
 )
