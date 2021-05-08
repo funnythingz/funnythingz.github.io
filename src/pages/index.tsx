@@ -1,9 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Zx1SVG from "../images/zx_1.svg"
+
+import RandomVisual from "../components/functions/random-visual"
 
 const IndexPage = () => (
   <Layout>
@@ -13,8 +13,12 @@ const IndexPage = () => (
       Welcome to Making Machinez.
       This site is so funny diary site.
     </p>
-    <div style={{ maxWidth: `100%`, marginBottom: `1.45rem` }}>
-      <img src={ Zx1SVG } alt="" />
+    <div style={{
+      maxWidth: `100%`,
+      marginBottom: `1.45rem`,
+      textAlign: `center`,
+    }}>
+      <img src={ RandomVisual() } alt="" width="90%" />
     </div>
   </Layout>
 )
