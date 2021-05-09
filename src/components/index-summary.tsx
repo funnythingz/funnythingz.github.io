@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { PageProps, Link, graphql } from "gatsby"
 
 const IndexSummary = ({ data }) =>(
@@ -31,10 +31,10 @@ const IndexSummary = ({ data }) =>(
                     margin: `0 0 0.5rem`
                   }}>
                     {node.frontmatter.cover &&
-                      <Image fixed={node.frontmatter.cover.childImageSharp.fixed} style={{
+                      <GatsbyImage image={node.frontmatter.cover.childImageSharp.gatsbyImageData} style={{
                         borderRadius: `8px`,
                         verticalAlign: `bottom`
-                      }} />
+                      }} alt="" />
                     }
                   </figure>
                   <h2 style={{
