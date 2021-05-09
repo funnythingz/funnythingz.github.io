@@ -36,7 +36,7 @@ const About: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       そして2017年4月末、Bootstrap4でDOMをすべてリファクタリングしました。
     </p>
     <p>
-      そして2021年、ReactベースのGatsbyでUIからすべてを完全に作り変えています。
+      そして2021年5月、ReactベースのGatsbyでUIからすべてを完全に作り変えています。
     </p>
     <p>
       何はともあれ、今後ともMaking Machinezをよろしくお願いいたします。
