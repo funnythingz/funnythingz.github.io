@@ -30,6 +30,7 @@ export const query = graphql`
         "JOG - とだJOG",
         "ライブディオZX - 規制前ひろZX",
         "JOG-ZR - IPE-ZR",
+        "NS-1 - とだNS-1",
       ]}}}
     ) {
       group(field: frontmatter___tags) {
