@@ -25,20 +25,22 @@ export default function Template({ data }) {
         </div>
       </article>
       <ul className="pager">
-        {thisPageContext.previous &&
-          <li className="pager-prev">
+        <li className="pager-prev">
+          {thisPageContext.previous &&
             <Link to={thisPageContext.previous.frontmatter.slug}>
+              <span>&lt;&lt;&nbsp;</span>
               {thisPageContext.previous.frontmatter.title}
             </Link>
-          </li>
-        }
-        {thisPageContext.next &&
-          <li className="pager-next">
+          }
+        </li>
+        <li className="pager-next">
+          {thisPageContext.next &&
             <Link to={thisPageContext.next.frontmatter.slug}>
               {thisPageContext.next.frontmatter.title}
+              <span>&nbsp;&gt;&gt;</span>
             </Link>
-          </li>
-        }
+          }
+        </li>
       </ul>
     </Layout>
   )
