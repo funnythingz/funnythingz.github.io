@@ -4,24 +4,25 @@ import { PageProps, Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
+export default function Template({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
   <Layout>
     <SEO title={frontmatter.title} />
-    <div className="blog-post-container">
+    <article className="blog-post-container">
       <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+        <time dateTime={frontmatter.date} style={{
+          fontSize: `1rem`,
+          color: `#666`,
+        }}>{frontmatter.date}</time>
+        <h1 className="pageTitle">{frontmatter.title}</h1>
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
-    </div>
+    </article>
   </Layout>
   )
 }
@@ -31,8 +32,7 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        slug
+        date(formatString: "YYYY年M月D日")
         title
       }
     }
