@@ -13,7 +13,7 @@ const IndexPage: React.FC<PageProps<DataProps>> = ({ data }) => (
     <h1 className="pageTitle">Hi gentsuki kids!</h1>
     <p>
       Welcome to Making Machinez.
-      This site is so funny diary site.
+      This is so funny diary site.
     </p>
     <div style={{
       maxWidth: `100%`,
