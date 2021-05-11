@@ -10,7 +10,12 @@ export default function Template({ data }) {
   const thisPageContext = allMarkdownRemark.edges.map((data) => (data.node.id === id ? data : null)).filter((e) => e)[0]
   return (
     <Layout>
-      <SEO title={frontmatter.title} />
+      {frontmatter.cover &&
+        <SEO title={frontmatter.title} visual={frontmatter.cover.childrenImageSharp[0].fixed.src} />
+      }
+      {!frontmatter.cover &&
+        <SEO title={frontmatter.title} />
+      }
       <article className="blog-post-container">
         <div className="blog-post">
           <time dateTime={frontmatter.date} style={{
@@ -54,6 +59,13 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "YYYY年M月D日")
         title
+        cover {
+          childrenImageSharp {
+            fixed {
+              src
+            }
+          }
+        }
       }
     }
     allMarkdownRemark(sort: {fields: [frontmatter___date], order: ASC}) {
