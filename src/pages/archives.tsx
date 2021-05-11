@@ -8,7 +8,7 @@ import IndexSummary from "../components/index-summary"
 
 const Archives: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <Layout>
-    <SEO title="原付改造ブログ" />
+    <SEO title="原付改造ブログ" visual={Visual} />
     <h1 className="pageTitle">原付改造ブログ</h1>
     <img src={Visual} />
     <p>ライブディオ/ライブディオZX/スーパーディオを改造カスタムする日々の記録</p>

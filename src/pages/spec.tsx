@@ -8,7 +8,7 @@ import IndexSummary from "../components/index-summary"
 
 const Spec: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <Layout>
-    <SEO title="原付改造インプレッション" />
+    <SEO title="原付改造インプレッション" visual={Visual} />
     <h1 className="pageTitle">原付改造インプレッション</h1>
     <img src={Visual} />
     <p>ひろZX/とだディオ/ひろディオの改造スペックです</p>
