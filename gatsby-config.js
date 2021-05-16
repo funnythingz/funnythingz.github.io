@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: 'makingmachinez-gatsby',
   siteMetadata: {
     title: `Making Machinez`,
     description: `makingmachinezでは、ミニ四駆の改造や、ボアアップしたライブディオZXの原付改造カスタムブログ、インプレッション、ミニツーリングレポート公開してます`,
