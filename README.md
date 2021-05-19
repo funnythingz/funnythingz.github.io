@@ -1,5 +1,5 @@
-# makingmachinez-gatsby
+# funnythingz-gatsby
 
-Making MachinezをGatsbyで再構築するPJ
+メディアサイト群をマージしてGatsbyで構築しなおすPJ
 
 &copy; funnythingz
