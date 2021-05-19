@@ -7,7 +7,7 @@ import Menu from './header/menu'
 
 const styles = {
   header: {
-    background: `#f90`,
+    background: `#538CF5`,
     marginBottom: `1.5rem`,
   },
   container: {

@@ -10,6 +10,12 @@ const Archives: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <Layout>
     <SEO title="原付改造ブログ" visual={Visual} />
     <h1 className="pageTitle">原付改造ブログ</h1>
+    <p>
+      Hi gentsuki kids!
+      <br />
+      Welcome to Making Machinez.
+      This is so funny diary site.
+    </p>
     <img src={Visual} />
     <p>ライブディオ/ライブディオZX/スーパーディオを改造カスタムする日々の記録</p>
     <IndexSummary data={data} />
