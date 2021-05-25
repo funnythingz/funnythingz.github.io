@@ -62,15 +62,6 @@ const Menu = () => (
                 プラレール・スーパートーマス
               </Link>
             </li>
-            <li>
-              <Link to="/about"
-                className={location.pathname.match(/\/about/) ?
-                  `--active` : ''
-                }
-              >
-                あばうつ
-              </Link>
-            </li>
           </ul>
         )
       }}

@@ -10,6 +10,10 @@ import IndexSummary from "../components/index-summary"
 const IndexPage: React.FC<PageProps<DataProps>> = ({ data }) => (
   <Layout>
     <SEO title="HOME" visual={RandomVisual()} />
+    <h1 className="pageTitle">Hello! funnythingz world!</h1>
+    <p>
+      This site making for funny people! because I'm funnythingz!
+    </p>
     <div style={{
       maxWidth: `100%`,
       marginBottom: `1.45rem`,
