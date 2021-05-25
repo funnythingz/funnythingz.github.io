@@ -3,7 +3,6 @@ import { PageProps, Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import RandomVisual from "../components/functions/random-visual"
 import Visual from "./imgs/archives_image.jpg"
 import IndexSummary from "../components/index-summary"
 
@@ -23,7 +22,6 @@ const Archives: React.FC<PageProps<DataProps>> = ({ data, path }) => (
       textAlign: `center`,
     }}>
       <img src={Visual} />
-      <img src={ RandomVisual() } alt="" width="480" />
     </div>
     <p>ライブディオ/ライブディオZX/スーパーディオを改造カスタムする日々の記録</p>
     <IndexSummary data={data} />

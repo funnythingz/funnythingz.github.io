@@ -15,8 +15,6 @@ const IndexPage: React.FC<PageProps<DataProps>> = ({ data }) => (
       This site making for funny people! because I'm funnythingz!
     </p>
     <div style={{
-      maxWidth: `100%`,
-      marginBottom: `1.45rem`,
       textAlign: `center`,
     }}>
       <img src={ RandomVisual() } alt="" width="90%" />
