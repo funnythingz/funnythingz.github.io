@@ -10,7 +10,19 @@ const Archives: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <Layout>
     <SEO title="原付改造ブログ" visual={Visual} />
     <h1 className="pageTitle">原付改造ブログ</h1>
-    <img src={Visual} />
+    <p>
+      Hi gentsuki kids!
+      <br />
+      Welcome to Making Machinez.
+      This is so funny diary site.
+    </p>
+    <div style={{
+      maxWidth: `100%`,
+      marginBottom: `1.45rem`,
+      textAlign: `center`,
+    }}>
+      <img src={Visual} />
+    </div>
     <p>ライブディオ/ライブディオZX/スーパーディオを改造カスタムする日々の記録</p>
     <IndexSummary data={data} />
   </Layout>
@@ -43,7 +55,7 @@ export const query = graphql`
               date(formatString: "YYYY年M月D日")
               cover {
                 childImageSharp {
-                  gatsbyImageData(layout: FIXED, width: 210, height: 120)
+                  gatsbyImageData(layout: FIXED, width: 320, height: 240)
                 }
               }
             }

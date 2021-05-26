@@ -10,7 +10,11 @@ const Spec: React.FC<PageProps<DataProps>> = ({ data, path }) => (
   <Layout>
     <SEO title="原付改造インプレッション" visual={Visual} />
     <h1 className="pageTitle">原付改造インプレッション</h1>
-    <img src={Visual} />
+    <div style={{
+      textAlign: `center`,
+    }}>
+      <img src={Visual} />
+    </div>
     <p>ひろZX/とだディオ/ひろディオの改造スペックです</p>
     <IndexSummary data={data} />
   </Layout>
@@ -36,7 +40,7 @@ export const query = graphql`
               date(formatString: "YYYY年M月D日")
               cover {
                 childImageSharp {
-                  gatsbyImageData(layout: FIXED, width: 210, height: 120)
+                  gatsbyImageData(layout: FIXED, width: 320, height: 240)
                 }
               }
             }

@@ -1,9 +1,9 @@
 module.exports = {
-  pathPrefix: 'makingmachinez-gatsby',
+  pathPrefix: 'funnythingz-gatsby',
   siteMetadata: {
-    title: `Making Machinez`,
-    description: `makingmachinezでは、ミニ四駆の改造や、ボアアップしたライブディオZXの原付改造カスタムブログ、インプレッション、ミニツーリングレポート公開してます`,
-    author: `@makingmachinez`,
+    title: `funnythingz`,
+    description: `あたまのおかしいサイトです`,
+    author: `@funnythingz`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -49,11 +49,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Making Machinez`,
-        short_name: `原付改造`,
+        name: `funnythingz`,
+        short_name: `funnythingz`,
         start_url: `/`,
-        background_color: `#f90`,
-        theme_color: `#f90`,
+        background_color: `#538CF5`,
+        theme_color: `#538CF5`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },

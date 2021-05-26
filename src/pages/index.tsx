@@ -10,14 +10,11 @@ import IndexSummary from "../components/index-summary"
 const IndexPage: React.FC<PageProps<DataProps>> = ({ data }) => (
   <Layout>
     <SEO title="HOME" visual={RandomVisual()} />
-    <h1 className="pageTitle">Hi gentsuki kids!</h1>
+    <h1 className="pageTitle">Hello! funnythingz world!</h1>
     <p>
-      Welcome to Making Machinez.
-      This is so funny diary site.
+      This site making for funny people! because I'm funnythingz!
     </p>
     <div style={{
-      maxWidth: `100%`,
-      marginBottom: `1.45rem`,
       textAlign: `center`,
     }}>
       <img src={ RandomVisual() } alt="" width="90%" />
@@ -41,7 +38,7 @@ export const query = graphql`
               date(formatString: "YYYY年M月D日")
               cover {
                 childImageSharp {
-                  gatsbyImageData(layout: FIXED, width: 210, height: 120)
+                  gatsbyImageData(layout: FIXED, width: 320, height: 240)
                 }
               }
             }

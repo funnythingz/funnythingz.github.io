@@ -63,12 +63,12 @@ const Menu = () => (
               </Link>
             </li>
             <li>
-              <Link to="/about"
-                className={location.pathname.match(/\/about/) ?
+              <Link to="/diary"
+                className={location.pathname.match(/\/diary/) ?
                   `--active` : ''
                 }
               >
-                あばうつ
+                Diary
               </Link>
             </li>
           </ul>

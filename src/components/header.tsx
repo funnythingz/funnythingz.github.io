@@ -7,12 +7,12 @@ import Menu from './header/menu'
 
 const styles = {
   header: {
-    background: `#f90`,
+    background: `#538CF5`,
     marginBottom: `1.5rem`,
   },
   container: {
     margin: `0 auto`,
-    maxWidth: 960,
+    maxWidth: 1060,
     padding: `0.5rem`,
   },
 }
