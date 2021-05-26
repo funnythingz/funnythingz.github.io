@@ -12,7 +12,7 @@ const styles = {
   },
   container: {
     margin: `0 auto`,
-    maxWidth: 960,
+    maxWidth: 1060,
     padding: `0.5rem`,
   },
 }

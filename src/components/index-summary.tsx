@@ -14,12 +14,12 @@ const IndexSummary = ({ data }) =>(
         <section style={{
           display: `flex`,
           flexWrap: `wrap`,
-          justifyContent: `flex-start`
+          justifyContent: `flex-start`,
         }}>
           {edges.map(({ node }) => (
             <article key={node.frontmatter.slug}>
               <div style={{
-                maxWidth: `210px`,
+                width: `320px`,
                 margin: `0 0.5rem 0.25rem`
               }}>
                 <Link to={node.frontmatter.slug} style={{
